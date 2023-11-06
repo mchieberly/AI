@@ -1,0 +1,2 @@
+50% You seem to have completed about half.  (The idea for parts 2 and 3 was to run your training once, then pickle the trained networks so I could run them
+immediately.)

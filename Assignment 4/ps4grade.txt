@@ -1,0 +1,4 @@
+108% Good work overall.  +10% for GPU speedup.  Minor points off for confusion matrices:
+
+1. You can start with confusion = np.zeros((10,10)).astype(int) to avoid meaningless decimal points.
+2. You should label the rows and columns (0, 1, 2, ..., 9)

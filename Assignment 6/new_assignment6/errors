@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "./transformer_train.py", line 97, in <module>
+    val_loss = evaluate(model, val_data, ntokens, criterion, device)
+  File "/home/levys@ad.wlu.edu/Desktop/eberly/transformer.py", line 136, in evaluate
+    output = model(data, src_mask)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/levys@ad.wlu.edu/Desktop/eberly/transformer.py", line 75, in forward
+    src = self.encoder(src) * math.sqrt(self.d_model)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/modules/sparse.py", line 162, in forward
+    return F.embedding(
+  File "/usr/local/lib/python3.8/dist-packages/torch/nn/functional.py", line 2210, in embedding
+    return torch.embedding(weight, input, padding_idx, scale_grad_by_freq, sparse)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu! (when checking argument for argument index in method wrapper_CUDA__index_select)
